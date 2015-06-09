@@ -2,6 +2,8 @@
 
 install_environment(){
     npm install
+    bower cache clean
+    bower update
     bower install --allow-root --config.interactive=false
 }
 
@@ -30,8 +32,6 @@ done
 if [ -n "$path" ]; then
     cd $BASE_PATH/$path
     install_environment
-    bower cache clean
-    bower update
     grunt watch
 else
     echo "You must specify --path argument"
