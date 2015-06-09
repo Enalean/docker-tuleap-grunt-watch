@@ -2,8 +2,8 @@
 
 install_environment(){
     npm install
-    bower cache clean
-    bower update
+    bower cache clean --allow-root
+    bower update --allow-root
     bower install --allow-root --config.interactive=false
 }
 
