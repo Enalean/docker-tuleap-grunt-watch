@@ -4,4 +4,4 @@
 
 In order to execute tests, all you have to do is to execute this command:
 
-    $ docker run --rm=true -ti -v $PWD:/tuleap erwyn/tuleap-grunt-watch --path PathToFolderContainingGruntFile
+    $ docker run --rm=true -ti -v $PWD:/tuleap enalean/tuleap-grunt-watch --path PathToFolderContainingGruntFile
